@@ -18,6 +18,9 @@ db.connection();
 app.use(express.json());
 
 //routes
+app.get("/", (req, res) => {
+  res.json({ message: "Auth API is live 🚀" });
+});
 app.use("/api/auth",router); 
 app.use("/api/home",home); 
 app.use("/api/admin",adminroutes); 
