@@ -77,7 +77,7 @@ Protected routes require a valid JWT token.
 ## Live Deployment
 
 Live API Link:  
-Deploying it 
+https://authentication-project-ok5p.onrender.com 
 
 Opening the link in a browser returns a JSON response indicating that the backend service is running.
 
