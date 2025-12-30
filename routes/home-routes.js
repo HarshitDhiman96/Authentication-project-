@@ -5,7 +5,7 @@ const authmiddleware=require('../middleware/auth-middleware')
 router.get("/welcome",authmiddleware,(req,res)=>{
     res.json({
         success:true,
-        message:"home page hai ye user ke liye "
+        message:"this is home page for users "
     })
 })
 

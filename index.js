@@ -10,8 +10,6 @@ const uploadimageroutes=require('./routes/image-routes')
 
 const app=express();
 
-
-
 //connection with database
 db.connection();
 

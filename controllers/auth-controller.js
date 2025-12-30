@@ -2,11 +2,12 @@ const user = require("../models/user");
 const bcrypt = require("bcryptjs");
 const jwttoken=require('jsonwebtoken');
 const { find } = require("../models/image");
-//register user
 
+
+//register user
 const register = async (req, res) => {
   try {
-    // console.log("➡️ req.body:", req.body);
+    console.log("➡️ req.body:", req.body);
     const { name, email, password, role } = req.body;
 //or kya karta hai agar name dbs mai hai toh if chalega aur email exists karta hai toh if chalega aur agar dono mai se koi nahi karta toh else chalega 
     const checkuniquness = await user.findOne({ $or: [{ name }, { email }] });
